@@ -1,0 +1,49 @@
+[06-Aug-2018 06:12:22 Etc/GMT] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/shatt747/public_html/quordenet/admin/includes/db_connect.php on line 8
+[06-Aug-2018 06:17:41 Etc/GMT] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/shatt747/public_html/quordenet/admin/includes/db_connect.php on line 8
+[06-Aug-2018 06:17:56 Etc/GMT] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/shatt747/public_html/quordenet/admin/includes/db_connect.php on line 8
+[06-Aug-2018 18:27:15 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[06-Aug-2018 18:27:57 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 06:00:25 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 06:15:51 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 07:55:10 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 12:38:14 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 12:38:26 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 12:40:16 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 12:43:40 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 13:32:06 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 16:48:02 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 17:33:25 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[07-Aug-2018 17:33:45 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[08-Aug-2018 02:40:56 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[08-Aug-2018 13:14:34 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[09-Aug-2018 08:47:33 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[09-Aug-2018 08:54:14 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[09-Aug-2018 09:21:33 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[09-Aug-2018 16:14:02 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[12-Aug-2018 15:35:35 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[12-Aug-2018 15:50:14 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[13-Aug-2018 08:29:04 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[23-Aug-2018 05:26:37 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[23-Aug-2018 08:47:39 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[28-Aug-2018 10:39:49 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[31-Aug-2018 09:14:29 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[09-Sep-2018 16:26:10 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[26-Sep-2018 06:47:02 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[26-Sep-2018 11:49:05 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[26-Sep-2018 14:17:00 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[26-Sep-2018 14:17:09 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 25
+[05-Oct-2018 09:45:54 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[05-Oct-2018 10:40:06 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[05-Oct-2018 10:40:37 Etc/GMT] PHP Parse error:  syntax error, unexpected '$uploaded_by' (T_VARIABLE) in /home/shatt747/public_html/quordenet/admin/upload_file.php on line 24
+[05-Oct-2018 10:47:28 Etc/GMT] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/shatt747/public_html/quordenet/admin/delete_confirmation.php on line 4
+[05-Oct-2018 10:52:21 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[05-Oct-2018 10:52:22 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[05-Oct-2018 10:52:43 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[05-Oct-2018 10:55:01 Etc/GMT] PHP Warning:  unlink(./uploads/CapturePicture.PNG): No such file or directory in /home/shatt747/public_html/quordenet/admin/delete_files.php on line 28
+[09-Oct-2018 09:49:52 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[08-Jan-2019 10:34:50 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[25-Jan-2019 11:06:30 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[25-Jan-2019 11:11:44 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[25-Jan-2019 11:15:30 Etc/GMT] PHP Notice:  Undefined index: access_token in /home/shatt747/public_html/quordenet/admin/logout.php on line 4
+[25-Jan-2019 11:15:31 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
+[19-Feb-2019 14:43:37 Etc/GMT] PHP Notice:  Undefined index: email in /home/shatt747/public_html/quordenet/admin/index.php on line 22
