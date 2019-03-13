@@ -89,8 +89,9 @@
 		                    		</li>';
 		                	}?>
 		                	<li>
-		                        <button type="button" class="btn btn-labeled btn-success" href="#">
-		                            <span class="btn-label"><i class="fa fa-eye"></i></span>View all saved</button>
+		                        <button type="button" class="btn btn-labeled btn-success" onclick="window.location.href='./saved-subjects.php'">
+		                            <span class="btn-label"><i class="fa fa-eye"></i></span>View all saved
+		                        </button>
 		                    </li>
 		                	</ul><?php
 		                }
