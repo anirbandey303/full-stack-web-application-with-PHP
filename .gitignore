@@ -2,7 +2,3 @@
 /Facebook
 config.php
 g-config.php
-test_database_connection.php
-/includes/db_connect.php
-/admin/includes/db_connect.php
-/mail/contact_me.php
