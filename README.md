@@ -1,6 +1,6 @@
 # Quordenet - An Online Educational Community Website
 
-This is a dynamic website that helps to delever study materials to users.
+This is a dynamic website that helps to delever study materials to users!
 
 ## Getting Started
 
