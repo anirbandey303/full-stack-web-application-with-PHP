@@ -10,7 +10,7 @@
       <div class="col-md-3">
         <b><h2 id="" class="text-secondary">Mapsite</h2></b>
         <ul class="list-unstyled">
-            <a href="#page-top" class="text-white js-scroll-trigger">Home</a>
+            <a href="./index" class="text-white js-scroll-trigger">Home</a>
             <br>
             <a href="./about-us" class="text-white">About us</a>
             <br>
@@ -53,7 +53,7 @@
     </div>
     <div class="row font-trebuchet">
       <div class="col-md-12">
-        <p class="text-center text-white">© Copyright 2017 Shattak - Designed and Developed by <a href="https://www.instagram.com/_anirbandey_/"> Anirban Dey </a> - All rights reserved.</p>
+        <p class="text-center text-white">© Copyright 2019 Shattak - Designed and Developed by <a href="https://www.instagram.com/weirdani/"> Anirban Dey </a> - All rights reserved.</p>
       </div>
     </div>    
   </div>

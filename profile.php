@@ -18,7 +18,7 @@
 		                        <h3>Welcome back, <?= $_SESSION['userData']['first_name'] ?></h3>
 		                        
 		                        <h4 class=""><i class="fa fa-envelope"></i> <?= $_SESSION['userData']['email'] ?></h4>
-		                        <h4 class=""><i class="fa fa-envelope"></i> <?= $_SESSION['userData']['id'] ?></h4>
+		                        <h4 class=""><i class="fa fa-id-badge"></i> <?= $_SESSION['userData']['id'] ?></h4>
 		                        <h4 class=""><i class="fa fa-plug"></i> <?= $_SESSION['source'] ?></h4>
 		                         <br />
 		                        <button onclick="window.location ='logout.php'" type="button" class="btn btn-labeled btn-primary" href="#">
@@ -102,26 +102,40 @@
 		            <div class="user-menu-content">
 		                <h3>
 		                    Notifications
-		                </h3>
-		                <ul class="user-menu-list">
-		                    <li>
-		                        <h4><i class="fa fa-user coral"></i> Rupam Bumba followed you.</h4>
-		                    </li>
-		                    <li>
-		                        <h4><i class="fa fa-heart-o coral"></i> Orunayan liked your document.</h4>
-		                    </li>
-		                    <li>
-		                        <h4><i class="fa fa-paper-plane-o coral"></i> Amitava Ghatak sent you to Class.</h4>
-		                    </li>
-		                    <li>
-		                        <button type="button" class="btn btn-labeled btn-success" href="#">
-		                            <span class="btn-label"><i class="fa fa-bell-o"></i></span>View all activity</button>
+		                </h3>		                
+		                    <?php
+		                    require_once "./functions/recent5activity.php";
+		                    if ($CountActivity == 0)
+							{
+								?><h4><i class="fa fa-exclamation coral"></i> No new updates were found</h4><?php
+							}
+							else
+							{	
+								?><ul class="user-menu-list"><?php
+			                    while($rowActivity = mysqli_fetch_assoc($resultActivity))
+								{
+									$subject_code = $rowActivity['subject_code'];
+									$department   = $rowActivity['department'];
+									$filename     = $rowActivity['filename'];
+									$subject_name = $rowActivity['subject_name'];
+									$time         = $rowActivity['time'];
+									$urlName = strtolower($rowActivity['subject_name']);
+								   	$urlName = preg_replace('/\s+/', '-', $urlName);
+									
+								   	echo'<li>
+			                        		<h4><i class="fa fa-bell-o coral"></i> <a href="subject.php?code='.urlencode($rowActivity['subject_code']).'&name='.urlencode($urlName).'">'.$filename.' | '.$rowActivity['subject_name'].'</a></h4>
+			                    		</li>';
+								}
+							}
+							?>
+		                        <button type="button" class="btn btn-labeled btn-success" onclick="window.location.href='./recent-uploads.php'">
+		                            <span class="btn-label"><i class="fa fa-bell-o"></i></span>View recent activity</button>
 		                    </li>
 		                </ul>
 		            </div>
 		            <div class="user-menu-content">
 		                <h3>
-		                    Chat with an Admin!
+		                    My lil message board yo!
 		                </h3>
 		                <!--<ul class="user-menu-list">
 		                    <li> <h4>EMPTY <small class="coral"><strong> coming soon</strong> <i class="fa fa-clock-o"></i></small></h4></li>
@@ -131,7 +145,8 @@
 		                	<div class="col-md-12">
 		                		<div class="chatbox" style="background: #EEEEEE">
 									<div class="chatlogs">
-										<div class="chat friend">
+										<h5>Ayeeeooo Wasssup?</h5>
+										<!-- <div class="chat friend">
 											<div class="user-photo"><img src="./img/profile/admin-support.png"></div>
 											<p class="chat-message">What's up, Brother ..!!</p>	
 										</div>										
@@ -154,13 +169,13 @@
 										<div class="chat self">
 											<div class="user-photo"><img src="<?=$_SESSION['userData']['picture']?>"></div>
 											<p class="chat-message">What's up ..!!</p>	
-										</div>									
-									</div>
+										</div> --> 							
+									</div> 
 									<div class="chat-form">
-										<form action="" method="POST">
+										<!--<form action="" method="POST">
 										<textarea placeholder="type here..." class="form-control" name="post" rows='3'></textarea>
 										<button style="margin-top: 5px;">Send</button>
-										</form>
+										</form> -->
 									</div>
 								</div>
 		                	</div>		                	
@@ -174,7 +189,7 @@
 		            </div>
 		            <div class="user-menu-content">
 		                <h2 class="text-center">
-		                    START SHARING
+		                    START SHARING <small>(comming soon)</small>
 		                </h2>
 		                <center><i class="fa fa-cloud-upload fa-4x"></i></center>
 		                <div class="share-links">
