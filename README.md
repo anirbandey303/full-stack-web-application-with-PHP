@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You need to install WAMP server or Xamp Server
+You need to install WAMP server or Xamp Server. GoogleAPI and Facebook API.
 
 ### Installing
 
