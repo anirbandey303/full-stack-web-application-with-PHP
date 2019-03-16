@@ -10,6 +10,11 @@
     $plugUserRes = mysqli_query($connection, $plugUser);
     $plugPostCount = mysqli_num_rows($plugPostRes);
     $plugUserCount = mysqli_num_rows($plugUserRes);
+
+    /* *************code for latest users******************* */
+
+    $recentUsers = "SELECT `first_name`, `last_name`, `user_id`, `joined` FROM `myusers` ORDER BY `user_id` DESC LIMIT 20;";
+    $resultUsers = mysqli_query($connection, $recentUsers);
 ?>
 <script type="text/javascript" src="./js/date_time.js"></script>
 <div class="container-fluid" id="main">
@@ -187,77 +192,24 @@
                         <table class="table table-striped">
                             <thead class="thead-inverse bg-dark">
                                 <tr>
-                                    <th>ID</th>
+                                    <th>Picture</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
-                                    <th>Gender</th>
                                     <th>Date</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1,001</td>
-                                    <td>responsive</td>
-                                    <td>bootstrap</td>
-                                    <td>cards</td>
-                                    <td>grid</td>
-                                </tr>
-                                <tr>
-                                    <td>1,002</td>
-                                    <td>rwd</td>
-                                    <td>web designers</td>
-                                    <td>theme</td>
-                                    <td>responsive</td>
-                                </tr>
-                                <tr>
-                                    <td>1,003</td>
-                                    <td>free</td>
-                                    <td>open-source</td>
-                                    <td>download</td>
-                                    <td>template</td>
-                                </tr>
-                                <tr>
-                                    <td>1,003</td>
-                                    <td>frontend</td>
-                                    <td>developer</td>
-                                    <td>coding</td>
-                                    <td>card panel</td>
-                                </tr>
-                                <tr>
-                                    <td>1,004</td>
-                                    <td>migration</td>
-                                    <td>bootstrap 4</td>
-                                    <td>mobile-first</td>
-                                    <td>design</td>
-                                </tr>
-                                <tr>
-                                    <td>1,005</td>
-                                    <td>navbar</td>
-                                    <td>sticky</td>
-                                    <td>jumbtron</td>
-                                    <td>header</td>
-                                </tr>
-                                <tr>
-                                    <td>1,006</td>
-                                    <td>collapse</td>
-                                    <td>affix</td>
-                                    <td>submenu</td>
-                                    <td>flexbox</td>
-                                </tr>
-                                <tr>
-                                    <td>1,007</td>
-                                    <td>layout</td>
-                                    <td>examples</td>
-                                    <td>themes</td>
-                                    <td>grid</td>
-                                </tr>
-                                <tr>
-                                    <td>1,008</td>
-                                    <td>migration</td>
-                                    <td>bootstrap 4</td>
-                                    <td>flexbox</td>
-                                    <td>design</td>
-                                </tr>
+                            <?php 
+                            while ($infos = mysqli_fetch_assoc($resultUsers))
+                            {
+                                echo"<tr>
+                                    <td>".$infos['user_id']."</td>
+                                    <td>".$infos['first_name']."</td>
+                                    <td>".$infos['last_name']."</td>
+                                    <td>".$infos['joined']."</td>
+                                </tr>";
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>
