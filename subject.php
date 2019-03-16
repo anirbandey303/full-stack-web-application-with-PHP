@@ -121,7 +121,7 @@ else
             echo '
             <tr>
               <td><a href="#"> '.$row1['filename'].' </a></td>
-              <td style="text-align: right;"><a href="'.$row1['location'].'" class="btn btn-sm btn-info"> VIEW </a></td>
+              <td style="text-align: right;"><a href="'.$row1['location'].'" target="_self" title="View or Download this Document" content-type="application/octet-stream" class="btn btn-sm btn-info"> VIEW </a></td>
             </tr>';
           }
         }
