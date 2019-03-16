@@ -206,46 +206,21 @@
 		    </section>
 			</div>
 		    <section id="contact" style="background-color: #E9EBEE">
-              <div class="container">
-                <div class="well well-sm">
-                  <h3><strong>Contact Us</strong></h3>
-                </div>              
-              <div class="row">
-                <div class="col-md-7">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4978321134113!2d88.4893499766134!3d22.560476542486537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity+of+Engineering+%26+Management%2C+New+Town!5e0!3m2!1sen!2sin!4v1552681750529" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
+            	<div class="container">
+            		<div class="well well-sm">
+                		<h3><strong>Contact Us</strong></h3>
+                	</div>              
+              		<div class="row">
+                		<div class="col-md-7">
+                    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4978321134113!2d88.4893499766134!3d22.560476542486537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity+of+Engineering+%26+Management%2C+New+Town!5e0!3m2!1sen!2sin!4v1552681750529" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen></iframe>
+                		</div>
 
-                  <div class="col-md-5">
-                      <h4><strong>Let's Get In Touch!</strong></h4>
-                    <form action="./mail/contact_me" method="POST">
-                      <!--<div class="form-group">
-                        <input type="text" class="form-control" name="name" value="" placeholder="Name *" required>
-                      </div>-->
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="email" value="" placeholder="E-mail *" required>
-                      </div>
-                      <!--<div class="form-group">
-                        <input type="tel" class="form-control" name="phone" value="" placeholder="Phone *" required>
-                      </div>-->
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" rows="3" placeholder="Message *" required></textarea>
-                      </div>
-                      <?php 
-                        if(isset($_GET['err']))
-                        {
-                        echo'<div class="alert alert-danger text-center">
-                          <i class="fa fa-bell" aria-hidden="true"></i>
-                          <p> '.urldecode($_GET["err"]).' </p> 
-                        </div>';
-                        }
-                      ?>
-                      <button class="btn btn-default" type="submit" name="button">
-                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i> SEND
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+                  		<div class="col-md-5">
+                      		<h4><strong>Also Check-out our YouTube Channel</strong></h4>
+                      		<iframe width="100%" height="250" src="https://www.youtube.com/embed/mSZzIqVS3Ek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  		</div>
+                	</div>
+            	</div>
             </section>
 		</div> <!--Container Div End-->     
     </main>
