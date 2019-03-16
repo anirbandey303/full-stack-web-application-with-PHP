@@ -17,8 +17,8 @@
                 <!--Social-->
                 <li>
                     <ul class="social">
-                        <li><a href="https://www.facebook.com/shattakpage/" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                        <li><a href="https://www.instagram.com/_anirbandey_/" class="icons-sm pin-ic"><i class="fa fa-instagram left"> </i></a></li>
+                        <li> <a href="https://www.facebook.com/shattakpage/" class="icons-sm fb-ic"> <i class="fa fa-facebook"> </i> </a> </li>
+                        <li><a href="https://www.instagram.com/weirdani/" class="icons-sm pin-ic"><i class="fa fa-instagram left"> </i></a></li>
                         <li><a href="https://www.linkedin.com/in/anirbandey303/" class="icons-sm gplus-ic"><i class="fa fa-linkedin left"> </i></a></li>
                         <li><a href="https://twitter.com/_anirbandey_" class="icons-sm tw-ic"><i class="fa fa-twitter left"> </i></a></li>
                     </ul>
@@ -91,7 +91,7 @@
                     <a href="./index.php" class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">LogIn</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="./about-us.php" class="nav-link"><i class="fa fa-home fa-lg"></i> <span class="clearfix d-none d-sm-inline-block">About</span></a>
+                    <a href="./index.php" class="nav-link"><i class="fa fa-home fa-lg"></i> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
                 </li>
                 <li class="nav-item">
                     <a href="./contact-us.php" class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
