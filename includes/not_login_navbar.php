@@ -88,7 +88,7 @@
             </div>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
                 <li class="nav-item">
-                    <a href="./index.php" class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">LogIn</span></a>
+                    <a href="./login.php" class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">LogIn</span></a>
                 </li>
                 <li class="nav-item">
                     <a href="./index.php" class="nav-link"><i class="fa fa-home fa-lg"></i> <span class="clearfix d-none d-sm-inline-block">Home</span></a>

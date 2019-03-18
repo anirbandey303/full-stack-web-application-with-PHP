@@ -1,5 +1,5 @@
 <?php
-  include "./return_users_index.php";
+session_start();
   if(!(isset($_GET['dept'])))
   {
     $_GET['dept'] = 'CSE';
@@ -12,10 +12,16 @@
     return $data;
   }
 ?>
-<?php include('includes/header.php') ?>
-<?php include('includes/db_connect.php') ?>
-<?php include('includes/navbar.php') ?>
-<?php include('functions/update_login_record.php') ?>
+<?php include('includes/header.php'); ?>
+<?php include('includes/db_connect.php'); ?>
+<?php 
+include('./return_users_index.php');
+if (isset($_SESSION['access_token']))
+{
+  include('includes/navbar.php');
+  include('functions/update_login_record.php');
+}
+?>
     <!--Main layout-->
     <main>        
         <div class="container-fluid">
@@ -83,7 +89,12 @@
                     </ul>
                 </section>
             </div>
-            <?php include"./functions/favourites.php"; ?>
+            <?php
+            if(isset($_SESSION['access_token']))
+            {
+              include"./functions/favourites.php";
+            }
+            ?>
             <div class="col-md-12" style="padding-top: 50px;">
               <h1>Subjects</h1>
               <div class="row">
@@ -91,7 +102,7 @@
                   <div class="form-group">
                     <form class="search-form" role="search" action="./index" method="POST">
                       <div class="form-group md-form mt-0 pt-1 waves-light">
-                        <input type="text" name="search" class="form-control" placeholder="Search Subject..." required onkeyup="searchq();" autocomplete="off">
+                        <input type="text" name="search" class="form-control" placeholder="Search Subject (*requires LogIn)" required onkeyup="searchq();" autocomplete="off">
                       </div>
                     </form>
                     <div id="data" style="display:inline-block; word-wrap: break-word;"></div>
@@ -99,7 +110,7 @@
                 </div>
               </div>
               
-                <div class="row">
+              <div class="row">
               <!-- Fetching and Displaying all subjects -->
               <?php                  
               $query="SELECT `subject_name`,`subject_code` FROM `subject` WHERE `department` LIKE '".$_GET['dept']."' ORDER BY `subject_name`";

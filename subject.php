@@ -1,5 +1,6 @@
 <?php 
-  include "./return_users.php";
+session_start();
+  //include "./return_users.php";
   if(!(isset($_GET['name'])) || empty($_GET['name']))
   {
     //header('Location: index.php?EnterValidSubjectName');
@@ -38,9 +39,14 @@
   }
 ?>
 <?php include('includes/header_subject.php') ?>
-<?php include('includes/navbar.php') ?>
-
-<?php include('functions/update_login_record.php') ?>
+<?php 
+include('./return_users_index.php');
+if (isset($_SESSION['access_token']))
+{
+  include('includes/navbar.php');
+  include('functions/update_login_record.php');
+}
+?>
 
 <!--Main layout-->
 <?php
@@ -63,6 +69,8 @@ else
               <span class='text-primary'> <?= $subject_name ?>  </span>
             </h1>
             <?php
+            if(isset($_SESSION['access_token']))
+            {
                //check if subject is saved.
               $svaeCheckQuery = "SELECT * FROM `save` WHERE `fb_id` = '".$_SESSION['userData']['id']."' AND `subject_code` = '$subject_code'";
               $saveResult = mysqli_query($connection, $svaeCheckQuery);
@@ -76,6 +84,7 @@ else
               {
                 ?><a href="./functions/save-subject.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
               }
+            }
             ?>
             <div class="subheading mb-5">
               <?= $subject_code ?> | 
@@ -129,7 +138,12 @@ else
           </tbody>
         </table>
       </div>
-      <?php include'./functions/favourites.php' ?>
+      <?php
+            if(isset($_SESSION['access_token']))
+            {
+              include"./functions/favourites.php";
+            }
+      ?>
     </div> <!--Container Div End-->     
   </main>
 <?php 

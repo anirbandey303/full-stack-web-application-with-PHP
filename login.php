@@ -8,7 +8,7 @@
     exit();
   }
   /*Facebook*/
-  $redirectURL = "http://localhost/quordenet/fb-callback";
+  $redirectURL = "https://www.shattak.com/quordenet/fb-callback.php";
   $permissions = ['email'];
   $loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 

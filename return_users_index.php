@@ -1,6 +1,6 @@
 <?php
 
-require_once "config.php";
+require_once "config_index.php";
 require_once "g-config.php";
 require_once "./includes/db_connect.php";
 if (!isset($_SESSION['access_token']))
@@ -8,7 +8,8 @@ if (!isset($_SESSION['access_token']))
 	if (!isset($_COOKIE['access_token']) || !isset($_COOKIE['source']))
 	{
 		//redirect to login
-		header('Location: ./login.php');
+		//header('Location: ./login.php');
+		include('./includes/not_login_navbar.php');
 	}
 	else
 	{
