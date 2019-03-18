@@ -1,7 +1,7 @@
 <?php
   require_once "config.php";
   require_once "g-config.php";
-  if(isset($_SESSION['access_token']))
+  if(isset($_SESSION['access_token']) || isset($_COOKIE['access_token']))
   {
     //header('Location: index.php');
     header('Location: index.php');
@@ -37,7 +37,7 @@
                     <span class="text-primary">Quordenet</span>
                   </h1>
                   <div class="subheading mb-5">
-                    Please LogIn or Signup to get access to all the Notes and Much More! | 
+                    Please LogIn to get access to all the Notes and Much More! | 
                     <a href="mailto:admin@shattak.com">admin@shatak.com</a>
                   </div>
                 </div>                        

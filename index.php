@@ -1,5 +1,5 @@
 <?php
-  include "./return_users.php";
+  include "./return_users_index.php";
   if(!(isset($_GET['dept'])))
   {
     $_GET['dept'] = 'CSE';
@@ -86,14 +86,19 @@
             <?php include"./functions/favourites.php"; ?>
             <div class="col-md-12" style="padding-top: 50px;">
               <h1>Subjects</h1>
-              <div class="form-group">
-                <form class="search-form" role="search" action="./index" method="POST">
-                  <div class="form-group md-form mt-0 pt-1 waves-light">
-                    <input type="text" name="search" class="form-control" placeholder="Search Subject..." required onkeyup="searchq();" autocomplete="off">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <form class="search-form" role="search" action="./index" method="POST">
+                      <div class="form-group md-form mt-0 pt-1 waves-light">
+                        <input type="text" name="search" class="form-control" placeholder="Search Subject..." required onkeyup="searchq();" autocomplete="off">
+                      </div>
+                    </form>
+                    <div id="data" style="display:inline-block; word-wrap: break-word;"></div>
                   </div>
-                </form>
-                <div id="data" style="display:inline-block; word-wrap: break-word;"></div>
+                </div>
               </div>
+              
                 <div class="row">
               <!-- Fetching and Displaying all subjects -->
               <?php                  
