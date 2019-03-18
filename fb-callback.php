@@ -12,6 +12,7 @@
 	catch(Facebook\Exceptions\FacebookSDKException $e)
 	{
 		echo "SDK Exception: " . $e->getMessage();
+		var_dump($helper->getError());
 		exit();
 	}
 	if(!$accessToken)
@@ -21,8 +22,8 @@
 	}
 	$oAuth2Client = $FB->getOAuth2Client();
 	$tokenMetadata = $oAuth2Client->debugToken($accessToken);
-	if(!$accessToken->isLongLived())
-		$accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
+	/*if(!$accessToken->isLongLived())
+		$accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);*/
 	$response = $FB->get("me?fields=id,first_name,last_name,email,picture.type(large)",$accessToken);
 	$userData = $response->getGraphNode()->asArray();
 	$_SESSION['userData'] = $userData;

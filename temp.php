@@ -1,66 +1,48 @@
-<!DOCTYPE html>
-<?php session_start(); 
-if(!isset($_SESSION['access_token']))
-{
-  header('Location: login.php');
-}
+<?php
+  session_start();
+  require_once "g-config.php";
+  require_once "./includes/db_connect.php";
+  if (isset($_SESSION['access_token']))
+  {
+    $gClient->setAccessToken($_SESSION['access_token']);
+  }
 
+  else if(isset($_GET['code']))
+  {
+    $token = $gClient->fetchAccessTokenWithAuthCode($_GET['code']);
+    $_SESSION['access_token'] = $token;
+    $_SESSION['source'] = "google";
+  }
+  else
+  {
+    header('Location: login.php');
+    exit();
+  }
+
+  $oAuth = new Google_Service_Oauth2($gClient);
+  $userData = $oAuth->userinfo_v2_me->get();
+  
+  $_SESSION['userData']['id'] = $userData['id'];
+  $_SESSION['userData']['email'] = $userData['email'];
+  $_SESSION['userData']['first_name'] = $userData['givenName'];
+  $_SESSION['userData']['last_name'] = $userData['familyName']; 
+  $_SESSION['userData']['picture'] = $userData['picture'];
+  $accessToken = $_SESSION['userData']['id'];
+
+  $cookie_name = 'access_token';
+  $cookie_value = base64_encode($accessToken);
+  $cookie_source_name = 'source';
+  $cookie_source_value = base64_encode("google");
+
+  setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+  setcookie($cookie_source_name, $cookie_source_value, time() + (86400 * 30), "/");
+
+  
+  if (isset($_SESSION['access_token']))
+  {
+    include "./functions/login_record.php";
+  }
+
+  header('Location: index.php');
+  exit();
 ?>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <div class="container" style="margin-top: 100px">
-      <div class="row justify-content-center">
-        <div class="col-md-3" align="center">
-          <img src="<?php echo $_SESSION['userData']['picture'] ?>">
-        </div>
-        <div class="col-md-9" align="center">
-          <table class="table table-hover table-bordered">
-            <tbody>
-              <tr>
-                <td>ID</td>
-                <td><?= $_SESSION['userData']['id'] ?></td>
-              </tr>
-              <tr>
-                <td>First name</td>
-                <td> <?= $_SESSION['userData']['first_name'] ?></td>
-              </tr>
-              <tr>
-                <td>lastname</td>
-                <td><?= $_SESSION['userData']['last_name'] ?></td>
-              </tr>
-              <tr>
-                <td>email</td>
-                <td><?= $_SESSION['userData']['email'] ?></td>
-              </tr>
-
-            </tbody>
-          </table>
-          <a href="logout.php">logout</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
