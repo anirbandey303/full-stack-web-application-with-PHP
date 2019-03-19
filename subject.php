@@ -78,11 +78,11 @@ else
               if ($saveCount == 1)
               {
                   //yes-> show filled?unsave
-                ?><a href="./bookmark.php?action=unsave&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
+                ?><a href="./functions/save-subject.php?action=unsave&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
               }
               else
               {
-                ?><a href="./bookmark.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
+                ?><a href="./functions/save-subject.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
               }
             }
             ?>
