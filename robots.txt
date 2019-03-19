@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /uemk/
+#Disallow: /uemk/uploads/
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: https://www.shattak.com/sitemap.xml
+#End Attracta SEO Tools Sitemap. Do not remove

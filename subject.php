@@ -78,11 +78,11 @@ else
               if ($saveCount == 1)
               {
                   //yes-> show filled?unsave
-                ?><a href="./functions/save-subject.php?action=unsave&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
+                ?><a href="./bookmark.php?action=unsave&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
               }
               else
               {
-                ?><a href="./functions/save-subject.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
+                ?><a href="./bookmark.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
               }
             }
             ?>
@@ -101,7 +101,7 @@ else
         <div class="form-group">
           <form class="search-form" role="search" action="./index" method="POST">
             <div class="form-group md-form mt-0 pt-1 waves-light">
-              <input type="text" name="search" class="form-control" placeholder="Search Subject..." required onkeyup="searchq();" autocomplete="off">
+              <input type="text" name="search" class="form-control" placeholder="Search Subject (*requires LogIn)" required onkeyup="searchq();" autocomplete="off">
             </div>
           </form>
           <div id="data" style="display:inline-block; word-wrap: break-word;"></div>
@@ -127,10 +127,13 @@ else
           <tbody> <?php
           while($row1=mysqli_fetch_assoc($result1))
           {
+            $filename = urlencode($row1['filename']);
+            $destinations = urlencode($row1['location']);
+            $subject_code = urlencode($subject_code);
             echo '
             <tr>
               <td><a href="#"> '.$row1['filename'].' </a></td>
-              <td style="text-align: right;"><a href="'.$row1['location'].'" target="_self" title="View or Download this Document" content-type="application/octet-stream" class="btn btn-sm btn-info"> VIEW </a></td>
+              <td style="text-align: right;"><a href="./download.php?filename='.$filename.'&destinations='.$destinations.'&subject_code='.$subject_code.'" target="_self" title="View or Download this Document" content-type="application/octet-stream" class="btn btn-sm btn-info"> VIEW </a></td>
             </tr>';
           }
         }

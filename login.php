@@ -8,7 +8,7 @@
     exit();
   }
   /*Facebook*/
-  $redirectURL = "https://www.shattak.com/quordenet/fb-callback.php";
+  $redirectURL = "https://www.shattak.com/quordenet/fb-callback";
   $permissions = ['email'];
   $loginURL = $helper->getLoginUrl($redirectURL, $permissions);
 
@@ -49,9 +49,9 @@
                   <button class="loginBtn loginBtn--facebook" onclick="window.location = '<?= $loginURL ?>';">
                     Login with Facebook
                   </button>
-                   <button class="loginBtn loginBtn--google" onclick="window.location = '<?= $gLoginURL ?>';">
+                   <?php /* <button class="loginBtn loginBtn--google" onclick="window.location = '<?= $gLoginURL ?>';">
                     Login with Google
-                  </button> 
+                  </button> */ ?>
                   <button class="loginBtn loginBtn--guest" onclick="window.location = '<?= $guestLoginURL ?>';">
                     Continue as Guest
                   </button>

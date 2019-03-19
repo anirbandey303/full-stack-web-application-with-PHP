@@ -26,7 +26,17 @@ set_time_limit(0);
 		$file_name = trim(str_replace(" ","_", $_FILES['file_upload']['name']));
 		$file_type 		= $_FILES["file_upload"]["type"];
 		$file_size 		= $_FILES["file_upload"]["size"];
-		$tmp_name 		= $_FILES["file_upload"]["tmp_name"];		
+		$tmp_name 		= $_FILES["file_upload"]["tmp_name"];
+
+
+	$duplicateCheck = "SELECT * FROM `notes` WHERE `subject_code` LIKE '$subject_code' AND `filename` LIKE '$filename';";
+	$duplicateResult = mysqli_query($connection, $duplicateCheck);
+	$duplicateCount = mysqli_num_rows($duplicateResult);
+	if($duplicateCount > 0)
+	{
+		header('Location:./index.php?msg='.urlencode("This file Already Exists, Please check properly."));
+		exit();
+	}	
 
 	if (!empty($_FILES['file_upload']) && $_FILES['file_upload']['error'] == UPLOAD_ERR_OK)
 	{
@@ -41,36 +51,39 @@ set_time_limit(0);
 		    {
 		        throw new \Exception('Error on upload: Invalid file definition');
 		    }
+		    
+		    
+		    
+			    // Rename the uploaded file
+			    $noRename = $file_name;
+			    $uploadName = $file_name;
+			    $ext = strtolower(substr($uploadName, strripos($uploadName, '.')+1));
+			    $file_name = round(microtime(true)).mt_rand().'.'.$ext;
+			    $file_name = $noRename;
+			    $destination = "../uploads/".$file_name;
+			    $getLocation = "./uploads/".$file_name;
 
-		    // Rename the uploaded file
-		    $noRename = $file_name;
-		    $uploadName = $file_name;
-		    $ext = strtolower(substr($uploadName, strripos($uploadName, '.')+1));
-		    $file_name = round(microtime(true)).mt_rand().'.'.$ext;
-		    $file_name = $noRename;
-		    $destination = "../uploads/".$file_name;
-		    $getLocation = "./uploads/".$file_name;
-
-			if(move_uploaded_file($tmp_name,$destination))
-			{
-				$sql = "INSERT INTO `notes` (`note_id`, `department`, `subject_code`, `filename`, `location`, `uploaded_by`, `time`) VALUES (NULL, '$department', '$subject_code', '$filename', '$getLocation', '$uploaded_by', NOW())";
-
-				if($connection -> query($sql) === TRUE)
+				if(move_uploaded_file($tmp_name,$destination))
 				{
-					header('Location:./index.php?msg='.urlencode("The File has been uploaded"));
-					exit();
+					$sql = "INSERT INTO `notes` (`note_id`, `department`, `subject_code`, `filename`, `location`, `uploaded_by`, `time`) VALUES (NULL, '$department', '$subject_code', '$filename', '$getLocation', '$uploaded_by', NOW())";
+
+					if($connection -> query($sql) === TRUE)
+					{
+						header('Location:./index.php?msg='.urlencode("The File has been uploaded"));
+						exit();
+					}
+					else
+					{
+						header('Location:./index.php?msg='.urlencode("The File could not be uploaded"));
+						exit();
+					}
 				}
 				else
 				{
-					header('Location:./index.php?msg='.urlencode("The File could not be uploaded"));
+					header('Location:./index.php?msg='.urlencode("Some Unknown Error occurred"));
 					exit();
 				}
-			}
-			else
-			{
-				header('Location:./index.php?msg='.urlencode("Some Unknown Error occurred"));
-				exit();
-			}
+			
 		}
 	}
 ?>
