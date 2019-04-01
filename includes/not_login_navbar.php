@@ -37,6 +37,13 @@
                 <!-- Side navigation links -->
                 <li>
                     <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Departments<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <?php include'departments.php' ?>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Donate<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul class="list-unstyled">
@@ -96,8 +103,43 @@
                 <li class="nav-item">
                     <a href="./contact-us.php" class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Departments
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="index.php?dept=FIRST-YEAR">First Year</a>
+                        <a class="dropdown-item" href="index.php?dept=CSE">Computer Science</a>
+                        <a class="dropdown-item" href="index.php?dept=ECE">Electronics & Communication</a>
+                        <a class="dropdown-item" href="index.php?dept=EE">Electrical</a>
+                        <a class="dropdown-item" href="index.php?dept=EEE">Electrical & Electronics</a>
+                        <a class="dropdown-item" href="index.php?dept=ME">Mechanical</a>
+                        <a class="dropdown-item" href="index.php?dept=CE">Civil</a>
+                        <a class="dropdown-item" href="index.php?dept=BTE">Bio-Technology</a>
+                                    
+
+                    </div>
+                </li>
             </ul>
         </nav>
         <!-- /.Navbar -->
+        <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11619977; 
+var sc_invisible=1; 
+var sc_security="2b559962"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11619977/0/2b559962/1/" alt="Web
+Analytics Made Easy - StatCounter"></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
     </header>
     <!--/.Double navigation-->

@@ -53,7 +53,7 @@
     <!-- icon -->
     <link rel="icon" href="img/shattakTransparent.png">
     
-<!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108537023-4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -62,4 +62,16 @@
 
   gtag('config', 'UA-108537023-4');
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics End of Script -->
+  <!-- Global site tag (gtag.js) - Google Analytics End -->
+
+
+
+   <!-- google adsense start -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4405752513006993",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- google adsense end-->

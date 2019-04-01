@@ -125,5 +125,23 @@
             </ul>
         </nav>
         <!-- /.Navbar -->
+        <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11619977; 
+var sc_invisible=1; 
+var sc_security="2b559962"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11619977/0/2b559962/1/" alt="Web
+Analytics Made Easy - StatCounter"></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
     </header>
     <!--/.Double navigation-->

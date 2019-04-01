@@ -35,9 +35,33 @@ if (isset($_SESSION['access_token']))
         <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-4 text-center">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- quord_after_notes  ADs-->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:336px;height:280px"
+                                 data-ad-client="ca-pub-4405752513006993"
+                                 data-ad-slot="7065181934"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                    </div>
+
+                    <div class="col-md-4 text-center">
                         <h2> <?= $filename ?> </h2>
-                        <a href="<?= $destinations ?>" id="submit" type="submit" class="btn btn-danger btn-lg" name="submit">Download Now</a> <br /> <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br />
+                        <a href="<?= $destinations ?>" id="submit" type="submit" class="btn btn-danger btn-lg" name="submit">Download Now</a> <br /> <br />
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- quord_after_notes  ADs-->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:336px;height:280px"
+                                 data-ad-client="ca-pub-4405752513006993"
+                                 data-ad-slot="7065181934"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
                     </div>
                 </div>
             </div>

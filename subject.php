@@ -75,14 +75,15 @@ else
               $svaeCheckQuery = "SELECT * FROM `save` WHERE `fb_id` = '".$_SESSION['userData']['id']."' AND `subject_code` = '$subject_code'";
               $saveResult = mysqli_query($connection, $svaeCheckQuery);
               $saveCount = mysqli_num_rows($saveResult);
+              $myuserid = $_SESSION['userData']['id'];
               if ($saveCount == 1)
               {
                   //yes-> show filled?unsave
-                ?><a href="./functions/save-subject.php?action=unsave&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
+                ?><a href="./functions/save-subject.php?action=unsave&subject_code=<?=$subject_code?>&myuserid=<?=$myuserid?>" class="text-primary"> <i class="fa fa-bookmark fa-3x"></i></a><?php
               }
               else
               {
-                ?><a href="./functions/save-subject.php?action=save&subject_code=<?=$subject_code?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
+                ?><a href="./functions/save-subject.php?action=save&subject_code=<?=$subject_code?>&myuserid=<?=$myuserid?>" class="text-primary"> <i class="fa fa-bookmark-o  fa-3x"></i></a><?php
               }
             }
             ?>
@@ -140,6 +141,21 @@ else
         ?>
           </tbody>
         </table>
+      </div>
+      <div class="col-md-12 container">
+        <div class="row">
+          <div class="col-md-12">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- quord_after_notes -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:336px;height:280px"
+                   data-ad-client="ca-pub-4405752513006993"
+                   data-ad-slot="7065181934"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+          </div>
+        </div>
       </div>
       <?php
             if(isset($_SESSION['access_token']))

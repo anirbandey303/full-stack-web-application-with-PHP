@@ -25,7 +25,7 @@ else
 	echo $emailTo;
 */
 	if(mail($emailTo, $subject, $emailBody, $headers))
-		echo "email was sent";
+		header('Location: ../contact-us.php?err='.urlencode("Your message has been emailed.").'');
 	else
 	{
 		require_once "../includes/db_connect.php";
