@@ -11,6 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 You need to install WAMP server or Xamp Server. GoogleAPI and Facebook API.
 You can install the SDKs using composer.
 Save the .txt files into .php files
+Put this entrie repo in www folder.
 
 ### Installing
 

@@ -73,6 +73,8 @@
                                     </li>
                                     <li><a href="./contact-us.php" class="waves-effect">Send a Message</a>
                                     </li>
+                                    <li><a href="./forms.php" class="waves-effect">Placement Group Form</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>

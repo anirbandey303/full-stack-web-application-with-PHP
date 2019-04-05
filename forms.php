@@ -48,8 +48,18 @@ $searchResult = mysqli_query($connection, $searchQuery);
 			<div class="col-md-12 col-sm-12 text-center">
 				<h2> Recruitment Group Add Request</h2>
 			</div>
-			<div class="col-md-3"> </div>
-			<div class="col-md-6 col-sm-12 text-center">
+		</div>
+		<div class="row">
+			<div class="col-md-3"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- quord_after_notes  ADs-->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:336px;height:280px"
+                                 data-ad-client="ca-pub-4405752513006993"
+                                 data-ad-slot="7065181934"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script> </div>
+			<div class="col-md-6 text-center table-responsive">
 				<table class="table table-hover table-striped" style="word-wrap: break-word;">
 		        	<thead>
 		            	<tr>
@@ -76,7 +86,8 @@ $searchResult = mysqli_query($connection, $searchQuery);
 			            }
 		            	?>
 		          	</tbody>
-		        </table><br /> <br /> <br /> <br />
+		        </table>
+		        <br /> <br /> <br /> <br />
 			</div>
 			<div class="col-md-3"> 
 				<h4 class="text-center"> Fill-up the Form Please!</h4>
@@ -87,7 +98,7 @@ $searchResult = mysqli_query($connection, $searchQuery);
                         <button id="submit" type="submit" class="form-control btn btn-danger" name="submit"> Send Message</button> <br /> <br />                        
 				</form> <br /> <br />
 			</div>
-		</div>
+		</div>		
 	</div>
 </main>
 <?php include('includes/footer.php') ?>   
