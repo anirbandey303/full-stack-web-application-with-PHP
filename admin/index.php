@@ -214,6 +214,7 @@
                         </table>
                     </div>
                 </div>
+                <a style="opacity: 0;" target="_blank" href="https://www.alexa.com/siteinfo/shattak.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/a?url=https://www.alexa.com/siteinfo/shattak.com'></script></a>
             </div>
             <!--/row-->
 
@@ -526,7 +527,7 @@
         </div>
     </div>
 </div>
-    <!--scripts loaded here-->
+    <!-- scripts loaded here-->
     
 <?php include'./includes/scripts.php' ?>
   </body>

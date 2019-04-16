@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['admin_token']))
+if(isset($_SESSION['admin_token']) || isset($_COOKIE['count']))
   {
     header('Location: ./index.php');
     exit();

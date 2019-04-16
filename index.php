@@ -49,7 +49,7 @@ if (isset($_SESSION['access_token']))
                             <a href="mailto:admin@shattak.com">admin@shatak.com</a>
                         </div>
                         <p class="mb-5">
-                            This page contains all the notes of computer science department. This includes all class notes, lab assignments, question papers, etc. Blah blah blah blah blah blah as if you're going to read.
+                            Shattak.com is a project done by <b><a href="https://www.instagram.com/weirdani/"> Anirban Dey </a></b>, <b><a href="https://www.facebook.com/orunayan.bhattacharya"> Orunayan Bhattacharya</a> </b> and <b><a href="https://www.linkedin.com/in/rupam-bumba-0ba77378"> Rupam Sarkar </a></b> from <b>Computer Science and Engineering Department </b> of  <b>University of Engineering and Management, Kolkata.</b> It features all Assignments and Class Notes directly from your University professors. Shattak uses Facebook Login API for users to login and save their subjects of choice and much more! <b>Currently Shattak serves 300+ users on a daily basis. </b>
                         </p>
                     </div>
 
@@ -63,7 +63,7 @@ if (isset($_SESSION['access_token']))
                           </a>
                         </li>
                         <li class="list-inline-item">
-                          <a href="https://www.instagram.com/_anirbandey_/">
+                          <a href="https://www.instagram.com/weirdani/">
                             <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -71,7 +71,7 @@ if (isset($_SESSION['access_token']))
                           </a>
                         </li>
                         <li class="list-inline-item">
-                          <a href="#">
+                          <a href="https://www.linkedin.com/in/anirbandey303/">
                             <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -79,7 +79,7 @@ if (isset($_SESSION['access_token']))
                           </a>
                         </li>
                         <li class="list-inline-item">
-                          <a href="#">
+                          <a href="https://github.com/anirbandey303">
                             <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -88,6 +88,17 @@ if (isset($_SESSION['access_token']))
                         </li>
                     </ul>
                 </section>
+            </div>
+            <div class="mobileShow"> 
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12"><br />
+                    <p class="text-center">ADVERTISEMENT</p>
+                    <img src="./img/ads/slylad.jpeg" alt="Slylad Ads" height="auto" width="100%"><br />
+                    <p class="text-center">A new game from Slylad Interactive is coming soon!</p>
+                  </div>
+                </div>                
+              </div>
             </div>
             <?php
             if(isset($_SESSION['access_token']))
@@ -181,7 +192,7 @@ if (isset($_SESSION['access_token']))
     </main>
 
     <footer>
-    
+      <a style="opacity: 0;" target="_blank" href="https://www.alexa.com/siteinfo/shattak.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/a?url=https://www.alexa.com/siteinfo/shattak.com'></script></a>
     </footer>
 <?php include('includes/footer.php') ?>   
     <!--/.Footer-->

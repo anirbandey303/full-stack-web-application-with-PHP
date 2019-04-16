@@ -16,6 +16,9 @@
                 <a class="nav-link" href="./index.php">Home <span class="sr-only">Home</span></a>
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="./form_display_table.php">Recruitment List <span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="../index.php">Quordenet <span class="sr-only">Quordenet</span></a>
             </li>
         </ul>

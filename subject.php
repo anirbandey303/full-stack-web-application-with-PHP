@@ -169,7 +169,7 @@ else
 }
 ?>
   <footer>
-    
+    <a style="opacity: 0;" target="_blank" href="https://www.alexa.com/siteinfo/shattak.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/a?url=https://www.alexa.com/siteinfo/shattak.com'></script></a>
   </footer>
 <?php include('includes/footer.php') ?>   
     <!--/.Footer-->

@@ -251,3 +251,15 @@ a:hover, a:focus, a:active {
         line-height: 3rem; /* 0.8x default size */
         }
     }
+
+/* ---Show content only on Mobile */
+
+
+  .mobileShow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }

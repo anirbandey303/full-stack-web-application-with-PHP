@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta https-equiv="x-ua-compatible" content="IE=edge">
-    <title>Engineering Notes For Semester</title>
+    <title>Engineering Notes For Semester | Shattak</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -26,30 +26,30 @@
 
     <!--Meta Tags -->
     <meta name="author" content="Shattak">
-    <meta name="description" content="Shattak aims in bringing a group of creative and diverse individuals together to bring into fruition the talents of several people. We have immsense respect for all the the creativity budding in you. We know there are minds which hold the possibility to make the impossible, possible.">    
-    <meta name="keywords" content="shattak, entertainment, media, youtube, just like that, last minute notes, Shattak, all in one, forum, cse, ece, me, bte, civil, ce, computer science engineering, electrical engineering, ee, electronics and communication engineering, education, online notes, best notes, uem, uemk, University of Engineering and Management, college notes">
+    <meta name="description" content="A project by Anirban Dey Orunayan Bhattachrya &  Rupam Bumba University of Engineering & Management Kolkata UEM that provides Engineering Class notes and Assignments">    
+    <meta name="keywords" content="shattak, Engineering, Class notes, Assignments, last minute notes, cse syllabus, btech, civil, commputer science engineering, electrical engineering, electronics and communication engineering, uem, uemk, University of Engineering and Management, college notes">
     <!--<base href="https://www.shattak.com/">-->
     <meta name="MobileOptimized" content="320">
     <meta https-equiv="content-language" content="es-ES" />
 <!--xxxxxxxxxxxxxxxxxxxxFacebookxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-    <meta property="og:title" content="Shattak | Just Like That" />
+    <meta property="og:title" content="All Engineering assignments and study materials at one place | Shattak" />
     <meta property="og:image" content="./img/shattak.jpg" />
     <meta property="og:site_name" content="Shattak" />
-    <meta property="og:description" content="Shattak aims in bringing a group of creative and diverse individuals together to bring into fruition the talents of several people. We have immsense respect for all the the creativity budding in you. We know there are minds which hold the possibility to make the impossible, possible." />
+    <meta property="og:description" content="A project by Anirban Dey Orunayan Bhattachrya &  Rupam Bumba University of Engineering & Management Kolkata UEM that provides Engineering Class notes and Assignments" />
     <meta property="og:type" content="education" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://shattak.com/index" />
+    <meta property="og:url" content="https://www.shattak.com/quordenet/index" />
 
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxTwitterxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@_anirbandey_" />
     <meta name="twitter:creator" content="@_anirbandey_" />
-    <meta name="twitter:url" content="https://shattak.com/index" />
-    <meta name="twitter:title" content="Shattak | Just Like That" />
-    <meta name="twitter:description" content="Shattak aims in bringing a group of creative and diverse individuals together to bring into fruition the talents of several people. We have immsense respect for all the the creativity budding in you. We know there are minds which hold the possibility to make the impossible, possible." />
+    <meta name="twitter:url" content="https://www.shattak.com/quordenet/index" />
+    <meta name="twitter:title" content="All Engineering assignments and study materials at one place | Shattak" />
+    <meta name="twitter:description" content="A project by Anirban Dey Orunayan Bhattachrya &  Rupam Bumba University of Engineering & Management Kolkata UEM that provides Engineering Class notes and Assignments" />
     <meta name="twitter:image" content="./img/shattak.jpg" />
 
-    <link rel="canonical" href="https://shattak.com/index">
+    <link rel="canonical" href="https://www.shattak.com/quordenet/index">
     <!-- icon -->
     <link rel="icon" href="img/shattakTransparent.png">
     

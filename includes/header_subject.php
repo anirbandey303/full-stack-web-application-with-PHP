@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <title><?= $subject_name ?></title>
+    <title><?= $subject_name ?> Engineering Notes For Semester | Shattak</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -29,8 +29,8 @@
 
     <!--Meta Tags -->
     <meta name="author" content="<?= $subject_name ?>">
-    <meta name="description" content="<?php $subject_description ?>">    
-    <meta name="keywords" content="<?= $keywords ?>">
+    <meta name="description" content="<?php $subject_description ?> A project by Anirban Dey Orunayan Bhattachrya &  Rupam Bumba University of Engineering & Management Kolkata UEM that provides Engineering Class notes and Assignments">    
+    <meta name="keywords" content="<?= $keywords ?> , shattak, Engineering, Class notes, Assignments, last minute notes, cse syllabus, btech, civil, commputer science engineering, electrical engineering, electronics and communication engineering, uem, uemk, University of Engineering and Management, college notes">
     <!--<base href="http://www.shattak.com/">-->
     <meta name="MobileOptimized" content="320">
     <meta http-equiv="content-language" content="es-ES" />
@@ -41,18 +41,18 @@
     <meta property="og:description" content="<?php $subject_description ?>" />
     <meta property="og:type" content="education" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="http://shattak.com/index" />
+    <meta property="og:url" content="https://www.shattak.com/quordenet/index" />
 
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxTwitterxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@_anirbandey_" />
     <meta name="twitter:creator" content="@_anirbandey_" />
-    <meta name="twitter:url" content="http://shattak.com/index" />
+    <meta name="twitter:url" content="https://www.shattak.com/quordenet/index" />
     <meta name="twitter:title" content="<?= $subject_name ?>" />
     <meta name="twitter:description" content="<?php $subject_description ?>" />
     <meta name="twitter:image" content="./img/shattakTransparent.png" />
 
-    <link rel="canonical" href="http://shattak.com/index">
+    <link rel="canonical" href="https://www.shattak.com/quordenet/index">
     <!-- icon -->
     <link rel="icon" href="img/shattakTransparent.png">
     

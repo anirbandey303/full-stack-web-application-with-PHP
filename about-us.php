@@ -148,7 +148,7 @@ else
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com/_anirbandey_/">
+                  <a href="https://www.instagram.com/weirdani/">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>

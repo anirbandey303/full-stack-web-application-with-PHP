@@ -37,8 +37,8 @@ if(isset($_POST['name']) && isset($_POST['link']))
 	$insertResult = mysqli_query($connection, $insertQuery);
 	
 }
-$searchQuery = "SELECT * FROM `frnd_req_form` ORDER BY `id`";
-$searchResult = mysqli_query($connection, $searchQuery);
+/*$searchQuery = "SELECT * FROM `frnd_req_form` ORDER BY `id`";
+$searchResult = mysqli_query($connection, $searchQuery);*/
 
 //mysqli_close($connection);
 ?>
@@ -47,6 +47,16 @@ $searchResult = mysqli_query($connection, $searchQuery);
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
 				<h2> Recruitment Group Add Request</h2>
+				<?php
+				if(isset($_POST['name']) && isset($_POST['link']))
+				{
+					echo'
+					<div class="alert alert-danger text-center">
+	                	<i class="fa fa-bell" aria-hidden="true"></i>
+	                    <p> Your Request to Join the Group has been Notified to the Admins. </p> 
+	                </div>';
+            	}
+                ?>
 			</div>
 		</div>
 		<div class="row">
@@ -60,43 +70,18 @@ $searchResult = mysqli_query($connection, $searchQuery);
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script> </div>
 			<div class="col-md-6 text-center table-responsive">
-				<table class="table table-hover table-striped" style="word-wrap: break-word;">
-		        	<thead>
-		            	<tr>
-		              		<th>ID</th>
-		              		<th>Name</th>
-		              		<th style="text-align: right;">
-		              			<a href=""> Profile Link </a>
-		              		</th>        
-		            	</tr>
-		          	</thead>
-		          	<tbody>
-		          		<?php
-		          		while($row=mysqli_fetch_assoc($searchResult))
-		          		{
-		          			$link = $row['link'];
-		          			echo"
-			         		<tr>		         			
-			         			<td> ".$row['id']." </td>
-			              		<td> ".$row['name']." </td>
-			              		<td style='text-align: right;'>
-			              			<a href='$link' target='_blank'>".$row['link']." </a>
-			              		</td>
-			            	</tr>";
-			            }
-		            	?>
-		          	</tbody>
-		        </table>
-		        <br /> <br /> <br /> <br />
-			</div>
-			<div class="col-md-3"> 
 				<h4 class="text-center"> Fill-up the Form Please!</h4>
 				<form id="contact-form" action="./forms" method="POST">					
                         <input type="name" class="form-control" name="name" placeholder="Legit Name (No Angel Priya)" required="">
                     	<br />					
-                        <textarea class="form-control" rows="2" name="link" placeholder="Paste your FB Link Here" required=""></textarea><br />                               
+                        <textarea class="form-control" rows="2" name="link" placeholder="Paste your facebook profile Link Here" required=""></textarea><br />                               
                         <button id="submit" type="submit" class="form-control btn btn-danger" name="submit"> Send Message</button> <br /> <br />                        
-				</form> <br /> <br />
+				</form>
+		        <br /> <br /> <br /> <br />
+			</div>
+			<div class="col-md-3">
+				
+				 <br /> <br />
 			</div>
 		</div>		
 	</div>

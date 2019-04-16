@@ -18,7 +18,7 @@
                 <li>
                     <ul class="social">
                         <li><a href="https://www.facebook.com/shattakpage/" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                        <li><a href="https://www.instagram.com/_anirbandey_/" class="icons-sm pin-ic"><i class="fa fa-instagram left"> </i></a></li>
+                        <li><a href="https://www.instagram.com/weirdani/" class="icons-sm pin-ic"><i class="fa fa-instagram left"> </i></a></li>
                         <li><a href="https://www.linkedin.com/in/anirbandey303/" class="icons-sm gplus-ic"><i class="fa fa-linkedin left"> </i></a></li>
                         <li><a href="https://twitter.com/_anirbandey_" class="icons-sm tw-ic"><i class="fa fa-twitter left"> </i></a></li>
                     </ul>
